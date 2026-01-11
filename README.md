@@ -17,4 +17,6 @@ Este script analiza archivos de log en crudo y extrae:
 
    https://roadmap.sh/projects/nginx-log-analyser
 
+ ```
+
    <img width="773" height="968" alt="image" src="https://github.com/user-attachments/assets/61a70644-ad9e-4a8e-be75-fc1697826c70" />
