@@ -16,17 +16,20 @@ echo -e "\n Top 5 IPs con más solicitudes:"
 awk '{print $1}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 5
 
 # 3. Top 5 Rutas Solicitadas (Qué están viendo)
-echo -e "\n Top 5 Rutas más visitadas:"
-awk '{print $7}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 5
+echo -e "\n Top 8 APIs más visitadas:"
+awk '{print $7}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 8
 
 # 4. Top 5 Códigos de Estado (Errores vs Éxitos)
-echo -e "\n Top 5 Códigos de respuesta HTTP:"
-awk '{print $9}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 5
+echo -e "\n Top 8 Códigos de respuesta HTTP:"
+awk '{print $9}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 8
+
+echo -e "\n Top 8 fehcas:"
+awk '{print $4}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 8
 
 # 5. Top 5 User Agents (Desde qué dispositivo/navegador)
 # Aquí usamos -F\" para usar las comillas como separador, porque el User Agent tiene espacios
 echo -e "\n Top 5 User Agents:"
-awk -F\" '{print $6}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 5
+awk -F\" '{print $6}' $LOG_FILE | sort | uniq -c | sort -nr | head -n 8
 
 echo "============================================"
 echo "Análisis completado."
