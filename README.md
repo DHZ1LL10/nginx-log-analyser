@@ -14,9 +14,7 @@ Este script analiza archivos de log en crudo y extrae:
 1. **Clonar el repositorio:**
    ```bash
    git clone [https://github.com/DHZ1LL10/nginx-log-analyser.git](https://github.com/DHZ1LL10/nginx-log-analyser.git)
+   ``` 
+https://roadmap.sh/projects/nginx-log-analyser
 
-   https://roadmap.sh/projects/nginx-log-analyser
-
- ```
-
-   <img width="773" height="968" alt="image" src="https://github.com/user-attachments/assets/61a70644-ad9e-4a8e-be75-fc1697826c70" />
+<img width="773" height="968" alt="image" src="https://github.com/user-attachments/assets/61a70644-ad9e-4a8e-be75-fc1697826c70" />
